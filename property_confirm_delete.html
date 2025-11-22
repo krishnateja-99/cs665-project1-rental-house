@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Delete Property - Rental House</title>
+</head>
+<body>
+  <p><a href="{{ url_for('property_list') }}">Back to Properties</a> | <a href="{{ url_for('logout') }}">Logout</a></p>
+
+  <h2>Delete Property</h2>
+  <p>Are you sure you want to delete "{{ prop['name'] }}"?</p>
+
+  <form method="post">
+    <button type="submit">Yes, delete</button>
+  </form>
+</body>
+</html>
